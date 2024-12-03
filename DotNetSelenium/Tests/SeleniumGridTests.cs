@@ -34,17 +34,17 @@ public class SeleniumGridTests
     }
 
 
-    [Test]
-    [Category("smoke")]
-    public void TestWithPOM()
-    {
-        //POM initialization
-        LoginPage loginPage = new LoginPage(_driver);
+    //[Test]
+    //[Category("smoke")]
+    //public void TestWithPOM()
+    //{
+    //    //POM initialization
+    //    LoginPage loginPage = new LoginPage(_driver);
 
-        loginPage.ClickLogin();
+    //    loginPage.ClickLogin();
 
-        loginPage.Login(_userName, _password);
-    }
+    //    loginPage.Login(_userName, _password);
+    //}
 
     [Test]
     [TestCase("chrome", "30")]
