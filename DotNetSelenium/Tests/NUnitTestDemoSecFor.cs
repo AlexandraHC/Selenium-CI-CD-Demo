@@ -12,7 +12,7 @@ namespace DotNetSelenium.Tests;
  * This is a demonstrate NUnit Tests
  */
 
-[TestFixture("admin", "password", DriverType.Chrome)]
+[TestFixture("admin", "password", DriverType.Firefox)]
 public class NUnitTestDemoSecFor
 {
     private IWebDriver _driver;
