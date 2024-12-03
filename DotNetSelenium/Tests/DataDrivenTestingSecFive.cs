@@ -134,7 +134,7 @@ public class DataDrivenTestingSecFive
     [TearDown]
     public void TearDown()
     {
-        _driver.Dispose();
+        _driver?.Dispose();
     }
 
 }

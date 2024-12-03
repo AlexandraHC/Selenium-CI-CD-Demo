@@ -134,8 +134,8 @@ public class NUnitTestDemoSecFor
     [TearDown]
     public void TearDown()
     {      
-        _driver.Dispose(); //metoda Dispose() => imi va inchide aplicatia-browserul
-        _extentNode.Pass("Browser quit");
-        _extentReports.Flush();
+        _driver?.Dispose(); //metoda Dispose() => imi va inchide aplicatia-browserul
+        _extentNode?.Pass("Browser quit");
+        _extentReports?.Flush();
     }
 }

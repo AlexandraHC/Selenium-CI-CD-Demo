@@ -56,6 +56,6 @@ public class SeleniumGridTests
     [TearDown]
     public void TearDown()
     {
-        _driver.Dispose();
+        _driver?.Dispose();
     }
 }
