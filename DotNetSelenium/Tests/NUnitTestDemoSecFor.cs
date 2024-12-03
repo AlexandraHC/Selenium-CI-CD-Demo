@@ -8,6 +8,10 @@ using OpenQA.Selenium.Firefox;
 //using OpenQA.Selenium.Chrome; => am refactorizat 
 namespace DotNetSelenium.Tests;
 
+/*
+ * This is a demonstrate NUnit Tests
+ */
+
 [TestFixture("admin", "password", DriverType.Edge)]
 public class NUnitTestDemoSecFor
 {
@@ -49,7 +53,7 @@ public class NUnitTestDemoSecFor
         }; 
         
         
-                //o alta varianta de if, dar sunt multe linii de cod
+                //another if,
         //switch (driverType)
         //{
         //    case DriverType.Chrome:
@@ -80,7 +84,7 @@ public class NUnitTestDemoSecFor
        // return _driver;
     }
 
-    //Cum sa generezi un RAPORT  de Testare in Selenium (Sectiunea 11, curs 37)
+    //How to generate a testing report (Sect11, course 37)
     private void SetupExtentReports()
     {
         _extentReports = new ExtentReports();
