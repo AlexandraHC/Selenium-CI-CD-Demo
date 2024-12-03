@@ -12,7 +12,7 @@ namespace DotNetSelenium.Tests;
  * This is a demonstrate NUnit Tests
  */
 
-[TestFixture("admin", "password", DriverType.Edge)]
+[TestFixture("admin", "password", DriverType.Chrome)]
 public class NUnitTestDemoSecFor
 {
     private IWebDriver _driver;
@@ -44,6 +44,9 @@ public class NUnitTestDemoSecFor
 
     private IWebDriver GetDriverType(DriverType driverType)
     {
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.AddArguments("--headless=new");
+
         return driverType switch
         {
             DriverType.Chrome => new ChromeDriver(),

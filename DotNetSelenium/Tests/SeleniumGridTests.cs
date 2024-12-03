@@ -6,7 +6,7 @@ using OpenQA.Selenium.Remote;
 
 namespace DotNetSelenium.Tests;
 
-[TestFixture("admin", "password", DriverType.Edge)]
+[TestFixture("admin", "password", DriverType.Chrome)]
 public class SeleniumGridTests
 {
     private IWebDriver _driver;
